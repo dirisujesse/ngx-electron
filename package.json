@@ -15,7 +15,7 @@
     "test-watch": "karma start --singleRun=false --autoWatch=true",
     "commit": "npm run prepublish && npm test && git-cz",
     "prepublish": "ngc && npm run build",
-    "build": "webpack",
+    "build": "node init && webpack",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "keywords": [
